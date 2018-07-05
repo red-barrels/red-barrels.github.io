@@ -1,0 +1,88 @@
+/* Web Fonts -------------------- */
+
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Avenir Next, Roboto, Helvetica Neue, Arial, sans-serif;
+	color: #363840;
+	background-color: whitesmoke;
+	margin: auto;
+}
+
+h1 {
+	font-family: Baskerville, Georgia, Futura, serif;
+	margin-bottom: -10px;
+	margin-top: -0px;
+}
+
+
+/* ================================= 
+  Base Layout Styles - Mobile first
+==================================== */
+
+#intro-bg {
+	background: linear-gradient(to bottom right, #F0815B, #E65EDA, #EA4D67, #D14D85);
+}
+
+#intro {
+	margin: 0 auto;
+	background: white;
+	
+	/*This turns off below medium sizes*/
+	box-shadow: 0px 25px 50px #574FE6; 
+}
+
+#card {
+	margin: 0 auto;
+	background: white;
+	
+	/*This turns off below medium sizes*/
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+}
+
+#caption {
+	margin-top: 1.5em;
+
+}
+
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+/* Media queries ------------------ */
+
+/* Small */
+@media (max-width: 767.98px)
+{
+	#intro {		
+		/*This turns off below medium sizes*/
+		box-shadow: 0px 15px 30px #574FE6;
+	}
+
+	#caption {
+		padding-top: 25px;
+
+	}
+
+}
