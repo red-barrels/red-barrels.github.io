@@ -20,7 +20,7 @@ body {
 	font-family: Avenir Next, Roboto, Helvetica Neue, Arial, sans-serif;
 	color: #363840;
 	background-color: whitesmoke;
-	margin: auto;
+	margin: 0 auto;
 }
 
 h1 {
@@ -29,12 +29,70 @@ h1 {
 	margin-top: -0px;
 }
 
+/* ================================= 
+  Navbar
+==================================== */
+
+nav {
+	background-color: white;
+	display: block;
+	overflow: hidden;
+}
+
+/* Selects all children within nav*/
+nav * {
+	display: inline-block;
+}
+
+/* This is the menu icon for mobile */
+nav div {
+	background-color: white;
+	padding: 1em;
+	display: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+
+ul li a {
+	text-decoration: none;
+	padding: 1em;
+	cursor: pointer;
+}
+
+ul li a:hover {
+	background-color: #E4E3F2;
+	transition: 1s;
+}
+
+nav h1 {
+	color: #363840;
+	padding: 0.75em 1em 1em 0.5em;
+	line-height: 0;
+	display: inline-block;
+}
+
+a:link {
+	text-decoration: none;
+	color: #363840;
+}
+
+a:visited {
+	color: #363840;
+}
+
+
 
 /* ================================= 
   Base Layout Styles - Mobile first
 ==================================== */
 
 #intro-bg {
+	margin-top: 0em;
 	background: #25C4DE linear-gradient(45deg, #F2AB25, #E65EDA, #25C4DE, #574FE6);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 10s ease infinite;
@@ -76,16 +134,34 @@ h1 {
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
 }
 
-
-/* Pseudo-classes ------------------ */
-
-a:link {
-	text-decoration: none;
+/* Footer */
+footer {
+	background-color: #9695AD;
+	width: 100%;
 }
 
-a:visited {
+footer p {
+	font-size: 1em;
+	color: #E4E3F2;
+}
+
+br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 1em; /* change this to whatever height you want it */
+}
+
+/* Changes the mouse to a pointer when mousing over the email address*/
+p span  {
 	color: white;
+	cursor: pointer;
 }
+
+p span:hover {
+	color: #363840;
+	transition: 0.25s;
+}
+
 
 /* Media queries ------------------ */
 
@@ -97,9 +173,60 @@ a:visited {
 		box-shadow: 0px 15px 30px #574FE6;
 	}
 
-	#caption {
-		padding-top: 25px;
-
+	/* Mobile Nav */
+	nav div {
+		padding: 1em 1em 0.25em 1em;
+		margin: auto 0;
+		display: block;
+		position: relative;
+		overflow: hidden;
 	}
+
+	/* Mobile Nav Title */
+	nav div h1 {
+		padding: 0.25em 0em;
+		display: inline-block;
+		cursor: pointer;
+		float: none;
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+
+	/* Desktop Nav Title */
+	nav h1 {
+		display: none;
+	}
+
+	/* Mobile Nav Menu Icon */
+	nav div img {
+		float: left;
+		padding-bottom: 0.5em;
+		cursor: pointer;
+	}
+
+	nav div img:hover {
+		background-color: red;
+		transition: 0.5s;
+	}
+
+	ul {
+		display: none;
+		position: static;
+		background: white;
+		float: left;
+	}
+
+	/* vertically stacks the menu items*/
+	ul li {
+		display: block;
+	}
+}
+
+
+/* Large */
+@media (min-width: 780px)
+{
 
 }
