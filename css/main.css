@@ -65,15 +65,30 @@ ul li a {
 }
 
 ul li a:hover {
-	background-color: #E4E3F2;
+	background-color: #EEEDF7;
+	transition: 0.5s;
+}
+
+ul li a:not(:hover) {
+	background-color: none;
 	transition: 0.5s;
 }
 
 nav h1 {
 	color: #363840;
-	padding: 0.75em 1em 1em 0.5em;
+	padding: 0.85em 1em 1em 0.85em;
 	line-height: 0;
 	display: inline-block;
+}
+
+nav h1 a:hover {
+	color: #25C4DE;
+	transition: 0.5s;
+}
+
+nav h1 a:not(:hover) {
+	color: #363840;
+	transition: 0.5s;
 }
 
 a:link {
@@ -159,7 +174,12 @@ br {
 
 #email:hover {
 	color: #363840;
-	transition: 0.25s;
+	transition: 0.5s;
+}
+
+#email:not(:hover)  {
+	color: white;
+	transition: 0.5s;
 }
 
 
@@ -194,6 +214,11 @@ br {
   		transform: translate(-50%, -50%);
 	}
 
+	nav div h1:hover {
+		color: #25C4DE;
+		transition: 0.25s;
+	}
+
 	/* Desktop Nav Title */
 	nav h1 {
 		display: none;
@@ -212,6 +237,11 @@ br {
 		transition: 0.5s;
 	}
 
+	nav div img:not(:hover) {
+		filter: opacity(100%);
+		transition: 0.5s;
+	}
+
 	ul {
 		display: none;
 		position: static;
@@ -222,6 +252,11 @@ br {
 	/* vertically stacks the menu items*/
 	ul li {
 		display: block;
+	}
+
+	ul li a {
+		width: ;
+
 	}
 }
 
