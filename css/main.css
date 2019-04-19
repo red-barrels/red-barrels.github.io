@@ -31,6 +31,26 @@ iframe {
 	width: 100%;
 }
 
+button {
+	margin-top: 1em;
+	padding: 1em;
+	color: #363840;
+	background-color: white;
+	border-width: 1px;
+	border-color: #363840;
+	border-radius: 2em;
+	cursor: pointer;
+	transition-duration: 0.5s;
+
+}
+
+button:hover {
+	border-color: #574FE6;
+	color: white;
+	background-color: #574FE6;
+
+}
+
 /* ================================= 
   Navbar
 ==================================== */
