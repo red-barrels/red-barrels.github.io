@@ -29,17 +29,17 @@
 <body>
 
 	<!-- Navbar -->
-	<nav>
+	<nav class="darkLight">
 		<!-- Mobile Navbar -->
 		<div>
             <!-- Menu icon -->
             <image src="img/menu.png">
             <!-- Mobile Nav Title -->
-            <h3><a href="https://red-barrels.github.io/">Tom Cheesman</a></h3>
+            <h3><a href="https://red-barrels.github.io/" class="title">Tom Cheesman</a></h3>
         </div>
 
         <!-- Desktop Navbar -->
-		<h1><a href="https://red-barrels.github.io/">Tom Cheesman</a></h1>
+		<h1><a href="https://red-barrels.github.io/" class="title">Tom Cheesman</a></h1>
 
 		<ul>
 			<li><a href="#ui">UX/UI</a></li>
@@ -49,58 +49,53 @@
 	</nav>
 
 	<!-- About -->
-	<div id="ui" class=".container">
-		<div class="row">
-			<!-- White div with heading and paragraph text on a full width gradient background. -->
 				<!--coloured background div-->
-				<div id="intro-bg" class="p-5">
-					<!--text container div -->
-					<div id="intro" class="col-xs-12 col-sm-10 col-md-6 col-xl-4 bg-white p-5" data-aos="fade-up" data-aos-duration="2000">
+	<div id="intro-bg">
+		<!--text container div -->
+		<div id="about" class="darkLight" data-aos="fade-up" data-aos-duration="2000">
 
-						<h4>
-							I’m a multidisciplinary visual designer, transitioning into product design and front-end development.
-						</h4>
-						<br>
-						
-						<p>
-							I have over nine years experience in a wide variety of professional media creation tools and techniques, including: UX/UI design, branding and marketing, print, graphic design, illustration, photography, videography, sound recording and the Adobe Creative Suite.
-							<br>
-							I’m always studying JavaScript and other front-end web development technologies. I coded this website.
-						</p>
-						<button id="getInTouch" onclick="window.location.href='mailto:thomas.j.cheesman@gmail.com'"/>Get in touch</button>
+			<h4>
+				I’m a multidisciplinary visual designer, transitioning into product design and front-end web development.
+			</h4>
+			<br>
+			
+			<p>
+				I have over ten years experience in a wide variety of professional media creation tools and techniques, including: UX/UI design, branding and marketing, print, graphic design, illustration, photography, videography, sound recording and the Adobe Creative Suite.
+				<br>
+				I’m always studying JavaScript and other front-end web development technologies. I coded this website.
+			</p>
+			<button id="getInTouch" onclick="window.location.href='mailto:thomas.j.cheesman@gmail.com'"/>Get in touch</button>
 
-					</div>
-				</div>
+			<button id="darkMode">Dark mode</button>
+
 		</div>
+	</div>
 
-		<!-- <div> containing image and text -->
-		<div id="ui" class="row p-sm-5">
-			<div id="card" class="p-4 col-md-9 col-lg-7" data-aos="fade-up" data-aos-duration="2000">
-				<!-- Caption for image -->
-				<div class="mx-3 mt-3">
-					<h3>Alffie’s website and learning management system (LMS).</h3>
-					<br>
-				</div>
+		<!-- <div> containing image and text -->		
+	<div class="card darkLight" data-aos="fade-up" data-aos-duration="2000">
+		<!-- Caption for image -->
+		<div>
+			<h3>Alffie’s website and learning management system (LMS).</h3>
+			<br>
+			</div>
 
 				<!-- Video embeded from vimeo.com -->
 
 				<iframe src="https://player.vimeo.com/video/324568602" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-				<div class="mx-3 mt-3">
-					<p>
-						<b>Problem:</b> A lack of cohesive product UX/UI design resulting in poor user experience, branding and professionalism. To put this another way, if you were to go to Alffie’s website, you would have a hard time working out what they do, how they do it and who it’s for. Alffie are at the top of the employment education market and are trying to break into new markets including providing technologies for corporate and government organisations. I believe the design of their current website and LMS do not communicate that Alffie are a professional and successful organistaion.
-						<br>
-						<b>Solution:</b> I put together a proposal to demonstrate the benefits and value UX/UI design can add to a organisation. I wanted to undo years of work without any UX/UI design or oversight. I put together a demo using Adobe Illustrator, Photoshop and XD of what an end product may look like.
-						<br>
-						Alffie’s website is messy and too colourful – there is no central theme or message. So I drastically scaled back the amount of colours used, basing everything on a style guide that I developed. I also developed some ideas around the style of copy I wanted. There should be strong calls to action and Alffie should quickly identify who they are, the problem they solve and how they do it.
-					</p>
-				</div>
-			</div>
+			<div>
+			<p>
+				<b>Problem:</b> A lack of cohesive product UX/UI design resulting in poor user experience, branding and professionalism. To put this another way, if you were to go to Alffie’s website, you would have a hard time working out what they do, how they do it and who it’s for. Alffie are at the top of the employment education market and are trying to break into new markets including providing technologies for corporate and government organisations. I believe the design of their current website and LMS do not communicate that Alffie are a professional and successful organistaion.
+				<br>
+				<b>Solution:</b> I put together a proposal to demonstrate the benefits and value UX/UI design can add to a organisation. I wanted to undo years of work without any UX/UI design or oversight. I put together a demo using Adobe Illustrator, Photoshop and XD of what an end product may look like.
+				<br>
+				Alffie’s website is messy and too colourful – there is no central theme or message. So I drastically scaled back the amount of colours used, basing everything on a style guide that I developed. I also developed some ideas around the style of copy I wanted. There should be strong calls to action and Alffie should quickly identify who they are, the problem they solve and how they do it.
+			</p>
 		</div>
+	</div>
 
 		<!-- <div> containing image and text -->
-		<div id="ui" class="row p-sm-5">
-			<div id="card" class="p-4 col-md-9 col-lg-7" data-aos="fade-up" data-aos-duration="2000">
+			<div class="card darkLight" data-aos="fade-up" data-aos-duration="2000">
 				<!-- Caption for image -->
 				<div class="mx-3 mt-3">
 					<h3>Digital Product Design – UX/UI</h3>
@@ -150,11 +145,9 @@
 						  </a>
 				</div>
 			</div>
-		</div>
 
 		<!-- <div> containing image and text -->
-		<div id="illustration" class="row p-sm-5">
-			<div id="card" class="p-4 col-md-9 col-lg-7" data-aos="fade-up" data-aos-duration="2000">
+			<div class="card darkLight" data-aos="fade-up" data-aos-duration="2000">
 
 				<!-- Caption for image -->
 				<div class="m-3">
@@ -196,11 +189,9 @@
 						  </a>
 				</div>
 			</div>
-		</div>
 
 	<!-- <div> containing image and text -->
-		<div id="branding" class="row p-sm-5">
-			<div id="card" class="p-4 col-md-9 col-lg-7" data-aos="fade-up" data-aos-duration="2000">
+			<div class="card darkLight" data-aos="fade-up" data-aos-duration="2000">
 				<!-- Caption for image -->
 				<div class="m-3">
 					<h1>Branding</h1>
@@ -246,10 +237,6 @@
 						  </a>
 				</div>
 			</div>
-		</div>
-
-	<!-- end container -->	
-	</div>
 
 	<!-- Jquery -->
 	<script type="text/javascript">
@@ -270,6 +257,9 @@
 
     <!-- Animate on scroll https://michalsnik.github.io/aos/ -->
 	<script>  AOS.init(); </script>
+
+	<script src="darkMode.js"></script>
+
 
 </body>
 
