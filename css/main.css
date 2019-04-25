@@ -30,27 +30,42 @@ h4 {
 }
 
 iframe {
-	width: 100%;
+	width: auto;
 }
 
 button {
 	margin-top: 1em;
 	padding: 1em;
 	color: #363840;
-	background-color: white;
+	background-color: (0, 0 , 0 ,0);
 	border-width: 1px;
 	border-color: #363840;
 	border-radius: 2em;
 	cursor: pointer;
-	transition-duration: 0.5s;
+	transition-duration: 0.4s;
 
 }
 
-button:hover {
+#getInTouch:hover {
 	border-color: #574FE6;
 	color: white;
 	background-color: #574FE6;
 
+}
+
+#darkMode {
+	margin-left: 1em;
+}
+
+#darkMode:hover {
+	border-color: #574FE6;
+	color: white;
+	background-color: #574FE6;
+
+}
+
+i {
+	font-size: 0.8em;
 }
 
 /* ================================= 
@@ -105,7 +120,7 @@ nav h1 {
 }
 
 nav h1 a:hover {
-	color: #25C4DE;
+	color: #574FE6;
 	transition-duration: 0.5s;
 }
 
@@ -125,8 +140,7 @@ a:visited {
 ==================================== */
 
 #intro-bg {
-	margin-top: 0em;
-	background: #25C4DE linear-gradient(45deg, #F2AB25, #E65EDA, #25C4DE, #574FE6);
+	background: #574FE6 linear-gradient(45deg, #F2AB25, #E65EDA, #25C4DE, #574FE6);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 10s ease infinite;
 	-moz-animation: Gradient 10s ease infinite;
@@ -151,25 +165,32 @@ a:visited {
 	100% {background-position: 0% 50%}
 }
 
-#intro {
-	margin: 0 auto;
+#about {
+	margin: 4em auto;
 	background: white;
+	padding: 2em;
+	box-sizing: border-box;
+	overflow-x:hidden;
 	
 	/*This turns off below medium sizes*/
 	box-shadow: 0px 25px 50px #574FE6; 
 }
 
-#card {
-	margin: 0 auto;
+.card {
+	margin: 5em auto;
 	background: white;
+	padding: 2em;
+
+	box-sizing: border-box;
+	overflow-x:hidden;
 	
-	/*This turns off below medium sizes*/
+	/*This turns off for extra small screen sizes*/
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
 }
 
 /* Footer */
 footer {
-	background-color: #9695AD;
+	background-color: #aeb6d5;;
 	width: 100%;
 }
 
@@ -192,11 +213,57 @@ br {
 }
 
 #email:hover {
-	color: #363840;
+	color: #574FE6;
 }
 
 
-/* Media queries ------------------ */
+/* ================================= 
+  Media Queries
+==================================== */
+
+/* Extra Large Plus */
+@media (min-width: 1200px)
+{
+	#about {
+		width: 35%;
+	}
+
+	.card {
+		width: 50%;
+	}
+
+}
+
+
+/* Large */
+@media (max-width: 1200px)
+{
+	#about {
+		width: 50%;
+	}
+
+	.card {
+		width: 75%;
+	}
+
+}
+
+/* Medium */
+@media (max-width: 992px)
+{
+	#about {
+		width: 60%;
+	}
+
+	.card {
+		width: 75%;
+	}
+
+	div div div p {
+		margin-top: 2em;
+	}
+
+}
 
 /* Small */
 @media (max-width: 767.98px)
@@ -204,6 +271,18 @@ br {
 	#intro {		
 		/*This turns off below 575px wide */
 		box-shadow: 0px 15px 30px #574FE6;
+	}
+
+	#about {
+		box-shadow: 0px 15px 30px #574FE6;
+		width: 80%;
+		box-sizing: border-box;
+		overflow-x:hidden;
+	}
+
+	.card {
+		margin: 4em auto;
+		width: 80%;
 	}
 
 	/* Mobile Nav */
@@ -228,7 +307,7 @@ br {
 	}
 
 	nav div h3:hover {
-		color: #25C4DE;
+		color: #574FE6;
 		transition: 0.25s;
 	}
 
@@ -278,7 +357,16 @@ br {
 /* Very Small */
 @media (max-width: 575px)
 {
-	#card {
+	#about {
+		margin: 2em auto;
+		width: 90%;
+		box-sizing: border-box;
+		overflow-x:hidden;
+	}
+
+	.card {
+		margin: 0;
+		width: 100%;
 		box-shadow: none;
 	}
 }
