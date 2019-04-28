@@ -8,6 +8,7 @@ function darkLightMode(){
     document.body.style.transition = "1s";
     document.getElementsByTagName("nav")[0].style.transition = "1s";
     document.getElementById("about").style.transition = "1s";
+    document.getElementsByTagName("nav div").style.transition = "1s";
 
     // Dark mode
 	if (counter === 0){
@@ -64,9 +65,13 @@ function darkLightMode(){
         document.querySelector("nav div").style.backgroundColor = "#363840";
 
 
+        document.querySelector("nav div img").src = "img/menu-dark.png";
+        document.querySelector("ul").style.backgroundColor = "#363840";
 
 
-        document.querySelector("nav h1").style.color = "white";
+
+
+        document.querySelector("nav h1 a").style.color = "white";
         document.getElementById("about").style.backgroundColor = "#363840";
         document.getElementById("about").style.color = "white";
         document.getElementsByTagName("nav")[0].style.backgroundColor = "#363840";
@@ -129,6 +134,10 @@ function darkLightMode(){
         // Mobile nav to dark mode
         document.querySelector("nav div h4 a").style.color = "#363840";
         document.querySelector("nav div").style.backgroundColor = "white";
+
+
+        document.querySelector("nav div img").src = "img/menu.png";
+        document.querySelector("ul").style.backgroundColor = "white";
 
         document.querySelector("nav h1 a").style.color = "#363840";
         document.getElementById("about").style.backgroundColor = "white";
