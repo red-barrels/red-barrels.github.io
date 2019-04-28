@@ -8,7 +8,6 @@ function darkLightMode(){
     document.body.style.transition = "1s";
     document.getElementsByTagName("nav")[0].style.transition = "1s";
     document.getElementById("about").style.transition = "1s";
-    document.getElementsByTagName("nav div").style.transition = "1s";
 
     // Dark mode
 	if (counter === 0){
