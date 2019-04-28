@@ -50,11 +50,13 @@ button {
 	border-color: #574FE6;
 	color: white;
 	background-color: #574FE6;
+	outline: none;
 
 }
 
 #darkMode {
 	margin-left: 1em;
+	outline: none;
 }
 
 #darkMode:hover {
@@ -100,7 +102,7 @@ ul li {
 }
 
 ul li:hover {
-	background-color: #EEEDF7;
+	background-color: #a3a3ff;
 	transition: 0.5s;
 }
 
@@ -326,9 +328,8 @@ br {
 	/* Mobile Nav Menu Icon */
 	nav div img {
 		float: left;
-		padding-bottom: 0.5em;
+		padding-bottom: 0.6em;
 		cursor: pointer;
-		background-color: rgba(0, 0, 0, 0);
 	}
 
 	nav div img:hover {
