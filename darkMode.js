@@ -4,7 +4,7 @@ var counter = 0;
 
 function darkLightMode(){
     // Transitions
-    document.getElementsByClassName("card darkLight")[0].style.transition = "1s";
+    document.getElementsByClassName("card")[0].style.transition = "1s";
     document.body.style.transition = "1s";
     document.getElementsByTagName("nav")[0].style.transition = "1s";
     document.getElementById("about").style.transition = "1s";
@@ -24,7 +24,7 @@ function darkLightMode(){
 
         // Change all cards IIFE
         (function darkCards() {
-            var cards = document.getElementsByClassName("darkLight");
+            var cards = document.getElementsByClassName("card");
             var i;
             for (i = 0; i < cards.length; i++) {
                 cards[i].style.color = "white";
@@ -93,7 +93,7 @@ function darkLightMode(){
 
          // Change all cards
          function lightCards(){
-            var cards = document.getElementsByClassName("darkLight");
+            var cards = document.getElementsByClassName("card");
             var o;
             for (o = 0; o < cards.length; o++) {
                 // cards[i].style.color = "white";
@@ -141,8 +141,8 @@ function darkLightMode(){
         document.querySelector("nav h1 a").style.color = "#363840";
         document.getElementById("about").style.backgroundColor = "white";
         document.getElementById("about").style.color = "#363840";
-        document.getElementsByClassName("card darkLight")[0].style.backgroundColor = "white";
-        document.getElementsByClassName("card darkLight")[0].style.color = "#363840";
+        document.getElementsByClassName("card")[0].style.backgroundColor = "white";
+        document.getElementsByClassName("card")[0].style.color = "#363840";
         document.getElementsByTagName("nav")[0].style.backgroundColor = "white";
 
 
