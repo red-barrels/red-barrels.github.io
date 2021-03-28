@@ -28,7 +28,7 @@ function darkLightMode(){
             var i;
             for (i = 0; i < cards.length; i++) {
                 cards[i].style.color = "white";
-                cards[i].style.backgroundColor = "#363840";
+                cards[i].style.backgroundColor = "#24262b";
             }
         }());
 
@@ -38,43 +38,44 @@ function darkLightMode(){
             var buttons = document.getElementsByTagName("button");
             var p;
             for (p = 0; p < buttons.length; p++) {
-                buttons[p].style.color = "white";
-                buttons[p].style.backgroundColor = "#363840";
-                buttons[p].style.borderColor = "white";
+                buttons[p].style.color = "black";
+                buttons[p].style.backgroundColor = "white";
             }
         }());
 
         // Dark mode button hover states
         document.getElementById("darkMode").onmouseover = function()
           {
-            this.style.color = "#363840";
+            this.style.color = "black";
             this.style.backgroundColor = "white";
           };
 
         document.getElementById("darkMode").onmouseout = function()
           {
-            this.style.color = "white";
-            this.style.backgroundColor = "#363840";
+            this.style.color = "black";
+            this.style.backgroundColor = "white";
           };
 
         
         
         // Mobile nav to dark mode
         document.querySelector("nav div h4 a").style.color = "white";
-        document.querySelector("nav div").style.backgroundColor = "#363840";
+        document.querySelector("nav div").style.backgroundColor = "black";
 
 
         document.querySelector("nav div img").src = "img/menu-dark.png";
-        document.querySelector("ul").style.backgroundColor = "#363840";
+        document.querySelector("ul").style.backgroundColor = "black";
 
 
 
 
         document.querySelector("nav h1 a").style.color = "white";
-        document.getElementById("about").style.backgroundColor = "#363840";
+        document.getElementById("about").style.backgroundColor = "black";
         document.getElementById("about").style.color = "white";
-        document.getElementsByTagName("nav")[0].style.backgroundColor = "#363840";
-        document.body.style.backgroundColor = "#24262b";
+        document.getElementsByTagName("nav")[0].style.backgroundColor = "black";
+        document.body.style.backgroundColor = "black";
+
+        // "#24262b"
 
         // Change text inside button to 'Light mode'.
         document.getElementById("darkMode").innerHTML = "Light mode";
@@ -109,9 +110,8 @@ function darkLightMode(){
             var buttons = document.getElementsByTagName("button");
             var p;
             for (p = 0; p < buttons.length; p++) {
-                buttons[p].style.color = "#363840";
-                buttons[p].style.backgroundColor = "white";
-                buttons[p].style.borderColor = "#363840";
+                buttons[p].style.color = "white";
+                buttons[p].style.backgroundColor = "black";
             }
         }
         
