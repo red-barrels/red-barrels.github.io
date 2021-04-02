@@ -58,6 +58,7 @@ button {
 	margin-top: 1em;
 	padding: 1em 2em;
 	color: white;
+	font-weight: 600;
 	background-color: black;
 	border-width: 0;
 	cursor: pointer;
@@ -415,6 +416,12 @@ br {
 /* Very Small */
 @media (max-width: 575px)
 {
+
+	nav div h4 {
+		font-size: 20px;
+	}
+
+
 	#about {
 		margin: 2em auto;
 		width: 90%;
