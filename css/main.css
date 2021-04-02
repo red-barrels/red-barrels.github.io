@@ -8,9 +8,9 @@
 	font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
-body, {
+body {
 	color: black;
-	background-color: whitesmoke;
+	background: rgba(235, 235, 250, 100);
 	margin: 0 auto;
 }
 
@@ -20,24 +20,33 @@ h1 {
 	display: left;
 }
 
+h2 {
+	font-size: 33px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 800;
+  	overflow-y: hidden;
+}
+
 h3 {
   font-family: 'Playfair Display', serif;
   overflow-y: hidden;
+  font-weight: 500;
   padding-left: 0;
   margin-top: 30px;
+  margin-bottom: 5px;
 	
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 22px;
   font-family: 'Playfair Display', serif;
   overflow-y: hidden;
   margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 h5 {
   font-family: 'Playfair Display', serif;
-  font-style: italic;
   overflow-y: hidden;
 }
 
@@ -58,7 +67,7 @@ button {
 #prototype-button {
 	background-color: black;
 	color: white;
-	margin-top: 40px;
+	margin-top: 10px;
 	margin-bottom: 40px;
 }
 
@@ -212,10 +221,9 @@ a:visited {
 .card {
 	margin: 5em auto;
 	background: white;
-	padding: 2em;
-  border-radius: 0%;
-  border: none;
-
+	padding: 50px;
+  	border-radius: 0%;
+  	border: none;
 	box-sizing: border-box;
 	overflow-x:hidden;
 	
@@ -268,7 +276,7 @@ br {
 	}
 
 	.card {
-		width: 50%;
+		width: 55%;
 	}
 
 }
@@ -278,7 +286,7 @@ br {
 @media (max-width: 1200px)
 {
 	#about {
-		width: 50%;
+		width: 55%;
 	}
 
 	.card {
