@@ -72,7 +72,8 @@ button {
 }
 
 #prototype-button:hover {
-	background-color: #363840;
+	background-color: lightslategrey;
+	color: black;
 }
 
 #darkMode {
@@ -93,8 +94,8 @@ button {
 
 button:hover {
 	border-color: #363840;
-	color: white;
-	background-color: #363840;
+	color: black;
+	background-color: lightslategrey;
 
 }
 
@@ -134,13 +135,13 @@ ul li {
 }
 
 ul li:hover {
-	background-color: #a3a3ff;
-	transition: 0.5s;
+	background-color: rgb(175, 188, 202);;
+	transition: 0.3s;
 }
 
 ul li:not(:hover) {
 	background-color: none;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
 nav h1 {
@@ -151,8 +152,8 @@ nav h1 {
 }
 
 nav h1 a:hover {
-	color: #574FE6;
-	transition-duration: 0.5s;
+	color: lightslategrey;
+	transition-duration: 0.3s;
 }
 
 nav div h4 {
@@ -162,7 +163,7 @@ nav div h4 {
 
 a:link {
 	text-decoration: none;
-  color: #363840;
+  color: black;
   overflow-y: hidden;
   font-family: 'Playfair Display', serif;
 }
@@ -324,13 +325,20 @@ br {
 	#about {
 		box-shadow: 0px 15px 30px #574FE6;
 		width: 80%;
+		padding: 30px;
 		box-sizing: border-box;
 		overflow-x:hidden;
 	}
 
 	.card {
 		margin: 4em auto;
+		padding: 30px;
 		width: 80%;
+	}
+
+	iframe {
+		margin-top: -60px;
+		margin-bottom: -30px;
 	}
 
 	/* Mobile Nav */
