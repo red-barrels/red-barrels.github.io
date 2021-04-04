@@ -2,103 +2,124 @@
   Base Styles
 ==================================== */
 
-* {
-  box-sizing: border-box;
-	overflow-x: hidden; /* This removes extra space to the right of elements through mobile viewports */
-	font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-}
+	* {
+	box-sizing: border-box;
+		overflow-x: hidden; /* This removes extra space to the right of elements through mobile viewports */
+		font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+	}
 
-body {
-	color: black;
-	background: rgba(235, 235, 250, 100);
-	margin: 0 auto;
-}
+	body {
+		color: black;
+		background: rgba(235, 235, 250, 100);
+		margin: 0 auto;
+	}
 
-h1 {
-	margin-bottom: -10px;
-	margin-top: -0px;
-	display: left;
-}
+	h1 {
+		margin-bottom: -10px;
+		margin-top: -0px;
+		display: left;
+	}
 
-h2 {
-	font-size: 33px;
+	#title {
+		font-size: 66px;
+		font-family: 'Playfair Display', serif;
+		font-weight: 800;
+		overflow-y: hidden;
+	}
+
+	h2 {
+		font-size: 33px;
+		font-family: 'Playfair Display', serif;
+		font-weight: 800;
+		overflow-y: hidden;
+	}
+
+	h3 {
 	font-family: 'Playfair Display', serif;
-	font-weight: 800;
-  	overflow-y: hidden;
-}
+	overflow-y: hidden;
+	font-weight: 500;
+	padding-left: 0;
+	margin-top: 40px;
+	margin-bottom: 5px;
+		
+	}
 
-h3 {
-  font-family: 'Playfair Display', serif;
-  overflow-y: hidden;
-  font-weight: 500;
-  padding-left: 0;
-  margin-top: 30px;
-  margin-bottom: 5px;
-	
-}
+	h4 {
+	font-size: 22px;
+	font-family: 'Playfair Display', serif;
+	overflow-y: hidden;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	}
 
-h4 {
-  font-size: 22px;
-  font-family: 'Playfair Display', serif;
-  overflow-y: hidden;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
+	h5 {
+	font-family: 'Playfair Display', serif;
+	overflow-y: hidden;
+	}
 
-h5 {
-  font-family: 'Playfair Display', serif;
-  overflow-y: hidden;
-}
+	p {
+		margin-top: 15px;
+	}
 
-iframe {
-	width: 100%;
-}
+	iframe {
+		width: 100%;
+	}
 
-button {
-	margin-top: 1em;
-	padding: 1em 2em;
-	color: white;
-	font-weight: 600;
-	background-color: black;
-	border-width: 0;
-	cursor: pointer;
-	transition-duration: 0.2s;
-}
+	.button-container {
+		margin-top: 15px;
+		padding-bottom: 15px;
+	}
 
-#prototype-button {
-	background-color: black;
-	color: white;
-	margin-top: 10px;
-	margin-bottom: 40px;
-}
+	button {
+		margin-top: 1em;
+		padding: 1em 2em;
+		color: white;
+		font-weight: 600;
+		background-color: black;
+		border-width: 0;
+		cursor: pointer;
+		transition-duration: 0.3s;
+	}
 
-#prototype-button:hover {
-	background-color: lightslategrey;
-	color: black;
-}
+	button:hover {
+		border-color: #363840;
+		color: black;
+		background-color: lightslategrey;
+	}
 
-#darkMode {
-	margin-left: 1em;
-	background-color: white;
-	color: black;
-	outline-width: 1px;
-	outline-style: solid;
-}
+	.secondary-button {
+		margin-left: 1em;
+		background-color: white;
+		color: black;
+		outline-width: 1px;
+		outline-style: solid;
+	}
 
-#darkMode:hover {
-	margin-left: 1em;
-	background-color: black;
-	color: white;
-	outline-width: 1px;
-	outline-style: solid;
-}
+	.secondary-button:hover {
+		background-color: lightslategrey;
+		color: white;
+	}
 
-button:hover {
-	border-color: #363840;
-	color: black;
-	background-color: lightslategrey;
+	#darkMode {
+		margin-left: 1em;
+		background-color: white;
+		color: black;
+		outline-width: 1px;
+		outline-style: solid;
+	}
 
-}
+	#darkMode:hover {
+		margin-left: 1em;
+		background-color: black;
+		color: white;
+		outline-width: 1px;
+		outline-style: solid;
+	}
+
+	.caption {
+		margin-top: -10px;
+		color: rgb(100, 100, 100);
+	}
 
 /* ================================= 
   Navbar
@@ -274,6 +295,10 @@ br {
 /* Extra Large Plus */
 @media (min-width: 1200px)
 {
+	#title {
+		font-size: 77px;
+	}
+
 	#about {
 		width: 35%;
 	}
@@ -329,6 +354,10 @@ br {
 		padding: 30px;
 		box-sizing: border-box;
 		overflow-x:hidden;
+	}
+
+	#title {
+		font-size: 55px;
 	}
 
 	.card {
@@ -410,6 +439,10 @@ br {
 
 	}
 
+	.caption {
+		margin-top: 3px;
+	}
+
 }
 
 
@@ -420,7 +453,6 @@ br {
 	nav div h4 {
 		font-size: 24px;
 	}
-
 
 	#about {
 		margin: 2em auto;
